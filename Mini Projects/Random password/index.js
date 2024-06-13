@@ -1,11 +1,8 @@
-const passwordLength = 12;
-const includeLowerCase = true;
-const includeUpperCase = true;
-const includeNumbers = true;
-const includeSymbols = true;
+const passwordLength = 5;
 
-function generatePassword(length,includeLowerCase,includeNumbers,includeSymbols,includeUpperCase)
+function generatePassword(length)
 {
+    if(length>0){
     const lowercaseChars ="abcdefghijklnmopqrstuvwxyz";
     const uppercaseChars = "ABCDEFGHIJKLNMOPQRSTUVWXYZ";
     const numberChars = "0123456789";
@@ -44,12 +41,13 @@ function generatePassword(length,includeLowerCase,includeNumbers,includeSymbols,
     let realPassword=[...password].join("");
     console.log(realPassword);
     return realPassword;
+    }
+    else
+    {
+        console.log("Length must be larger than 0");
+    }
 }
 
-const password = generatePassword(passwordLength
-    ,includeLowerCase
-    ,includeNumbers
-    ,includeSymbols
-    ,includeUpperCase);
+const password = generatePassword(passwordLength);
 
 console.log(`Generated password: ${password}`);
