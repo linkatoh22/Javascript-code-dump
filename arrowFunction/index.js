@@ -26,6 +26,14 @@ const squares = numbers.map( (element) => Math.pow(element,2) );
 
 const cubes = numbers.map( (element) => Math.pow(element,3) );
 
-console.log(squares);
+const evenNums = numbers.filter ( (element) => element % 2 === 0);
 
+const oddNums = numbers.filter ( (element) => element % 2 !==0 );
+
+const total = numbers.reduce ( (accumulator,element) => accumulator + element);
+
+console.log(squares);
 console.log(cubes);
+console.log(evenNums);
+console.log(oddNums);
+console.log(total);
