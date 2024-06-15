@@ -21,3 +21,11 @@ setTimeout(hello_arrow("Linh",19),3000);
 //THIRD EXAMPLE
 
 const numbers = [1,2,3,4,5];
+
+const squares = numbers.map( (element) => Math.pow(element,2) );
+
+const cubes = numbers.map( (element) => Math.pow(element,3) );
+
+console.log(squares);
+
+console.log(cubes);
