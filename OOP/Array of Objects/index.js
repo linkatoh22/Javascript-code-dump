@@ -7,4 +7,13 @@ const fruits = [{name:"apple",color:"red",calories:95},
 ];
 
 
-console.log(fruits[0].calories);
+const maxFruits = fruits.reduce ( (max,fruit)=>
+     max.calories < fruit.calories ? 
+        fruit : max );
+
+const minFruits = fruits.reduce( (min,fruit)=>
+    min.calories<fruit.calories? 
+    min:fruit);
+console.log(maxFruits);
+console.log("Min");
+console.log(minFruits);
