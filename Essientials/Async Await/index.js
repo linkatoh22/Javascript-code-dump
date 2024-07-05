@@ -59,16 +59,16 @@ function takeOutTrash(callback){
 }
 async function doChores(){
     try{
-    const walkDogResult = await walkDog();
-    console.log(walkDogResult);
+        const walkDogResult = await walkDog();
+        console.log(walkDogResult);
 
-    const cleanKitchenResult = await cleanKitchen();
-    console.log(cleanKitchenResult);
+        const cleanKitchenResult = await cleanKitchen();
+        console.log(cleanKitchenResult);
 
-    const takeOutTrashResult = await takeOutTrash();
-    console.log(takeOutTrashResult);
+        const takeOutTrashResult = await takeOutTrash();
+        console.log(takeOutTrashResult);
 
-    console.log("You finished all the chores!");
+        console.log("You finished all the chores!");
     }
     catch(error)
     {
